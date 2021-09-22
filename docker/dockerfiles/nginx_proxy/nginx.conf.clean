@@ -1,0 +1,17 @@
+server_tokens off;
+
+server {
+    listen 80;
+
+    server_name default;
+
+    client_max_body_size 108M;
+
+    location /.well-known/acme-challenge/ {
+        root /var/www/certbot;
+    }
+
+    location / {
+        return 301 https://$host$request_uri;
+    }
+}

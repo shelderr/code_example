@@ -1,0 +1,9 @@
+redis-data/
+postgres-data/
+mysql-data/
+certbot/
+dockerfiles/nginx_proxy/nginx.conf
+.env
+.db_data
+db_data
+init-letsencrypt.sh
